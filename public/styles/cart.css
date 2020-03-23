@@ -1,0 +1,16 @@
+.products{
+    border: 1px solid #333;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 16px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.mw-100 {
+    max-width: 100px !important;
+}
+
+.inCart {
+    margin-top: 10px;
+}

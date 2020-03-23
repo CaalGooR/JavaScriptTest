@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shopping Cart</title>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/styles/cart.css">
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a id="countProducts" class="form-control mr-sm-2" href="carts.html">
+                        <ion-icon name="basket"></ion-icon>Cart <span id="cart_num">0</span>
+                    </a>
+                </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <div class="row" id="productsContainer">
+                <!--
+                <div class="col-sm-4 col-md-3">
+                    <div class="products">
+                        <img src="public/img/gaming_computer.jpg"  class="img-fluid" alt="Responsive image">
+                        <h4 class="text-info">Gaming Computer</h4>
+                        <h4>$20,000</h4>
+                        <input type="hidden" name="name" value="Gaming Computer" />
+                        <input type="hidden" name="price" value="20,000" />
+                        <input type="submit" class="add-cart  btn btn-info" 
+                            value="Add to Cart" style="margin-top: 10px;" />
+                    </div>
+                </div>
+    
+                <div class="col-sm-4 col-md-3">
+                    <div class="products">
+                        <img src="public/img/processor_i9.png"  class="img-fluid" alt="Responsive image">
+                        <h4 class="text-info">Intel Processor i9</h4>
+                        <h4>$15,000</h4>
+                        <input type="hidden" name="name" value="Intel Processor i9" />
+                        <input type="hidden" name="price" value="15000" />
+                        <input  type="submit" class="add-cart cart2 btn btn-info" 
+                            value="Add to Cart" style="margin-top: 10px;"/>
+                    </div>
+                </div>
+                -->
+            </div>
+            <table class="table inCart" id="cartTable">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Products</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="tableContent">
+                  
+                </tbody>
+            </table>
+
+            <h4 class="text-info" id="basketTotal" style="justify-content: flex-end;">Basket total = $0.00</h4>
+            <button id="btn_buy" type="button" class="btn btn-success">Buy</button>
+        </div>
+    </body>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="public/scripts/Product.js"></script>
+    <script src="public/scripts/ShippingCart.js"></script>
+    <script src="public/scripts/main.js"></script>
+    
+</html>
